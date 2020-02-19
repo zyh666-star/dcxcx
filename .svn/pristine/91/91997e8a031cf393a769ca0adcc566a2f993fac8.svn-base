@@ -1,0 +1,22 @@
+package edu.etime.yqxdc.services.interfaces;
+
+import java.util.List;
+
+import edu.etime.yqxdc.pojo.GoodsType;
+
+public interface GoodsTypeService {
+	/**
+	 * 增加商品类型
+	 * @param goodstype
+	 * @return
+	 */
+	int insertGoodsType(GoodsType goodstype);
+	/**
+	 * 查询商品类型
+	 * @param goodstype
+	 * @return
+	 */
+	
+	List<GoodsType> selectGoodsTypeList(GoodsType goodstype);
+
+}

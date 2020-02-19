@@ -1,0 +1,22 @@
+package edu.etime.yqxdc.services.interfaces;
+
+import java.util.List;
+
+import edu.etime.yqxdc.dto.GoodsDto;
+
+/**
+ * 订单业务逻辑层
+ * @author 孤心
+ *
+ */
+public interface OrderService {
+
+	/**
+	 * 下订单
+	 * @param openid
+	 * @param goodslist
+	 * @param totleprice
+	 * @return
+	 */
+	int inserOrder(List<GoodsDto> goodslist,String openid,Double totleprice);
+}

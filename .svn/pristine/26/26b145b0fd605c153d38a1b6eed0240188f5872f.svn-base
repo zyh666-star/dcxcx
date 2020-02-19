@@ -1,0 +1,27 @@
+package edu.etime.yqxdc.services.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import edu.etime.yqxdc.dao.GoodsTypeMapper;
+import edu.etime.yqxdc.pojo.GoodsType;
+import edu.etime.yqxdc.services.interfaces.GoodsTypeService;
+@Service
+public class GoodsTypeServiceImpl implements GoodsTypeService{
+
+	@Autowired
+	private GoodsTypeMapper goodstypemapper;
+	@Override
+	public int insertGoodsType(GoodsType goodstype) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<GoodsType> selectGoodsTypeList(GoodsType goodstype) {
+		return goodstypemapper.selectGoodsType(goodstype);
+	}
+
+}
